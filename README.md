@@ -1,44 +1,46 @@
-# UT1 - PGL - Gestor de juguetes
+ 
+# UT1 - PGL - Pet's toys manager
 
-En este proyecto se ha implementado una apliación para gestionar un listado de juguetes para una mascota.
+This is a Pet toys manager. Here you can organize your pet's best possessions.
 
-## Comenzando 🚀
 
-Para poder descargar esta apliación al completo tan sólo ejecuta en tu terminal:
+## Starting 🚀
+
+For download this application just run in your terminal:
 
 
 ```
 git clone https://github.com/wenesmek/UT1-PGL-Ionic.git
 ```
 
-(si no tienes git instalado, mira el apartado _Pre-requisitos_)
+(if you have not git installed you can go direct to  _Prerequisites_)
 
 
-### Pre-requisitos 📋
+### Prerequisites 📋
 
-Para poder ejecutar este programa y sus configuraciones necesitarás:
+To excecute this app and it's configurations you'll neeed:
 
-* [Node](https://nodejs.org/es/) - Version 16.17.1 LTS de Node
-* [Git](https://git-scm.com/) - Gestor de repositorios
-* Ionic - Paquete de node para poder ejecutar/crear aplicaciones Ionic ``` npm install -g @ionic/cli ```
+* [Node](https://nodejs.org/es/) - Version 16.17.1 LTS of Node
+* [Git](https://git-scm.com/) - Repositories manager
+* Ionic - Node package to run/create Ionic applications ``` npm install -g @ionic/cli ```
 
 
 
-### Instalación 🔧
+### Installation 🔧
 
 _Back-end_
 
-_Instalando dependencias_
+_Dependencies installation_
 
-Para configurar las bibliotecas y dependencias del Back, tan sólo ejecuta este comando dentro de la carpeta _backend_ del proyecto:
+To configure the back dependencies you just have to run this command inside _backend_ folder:
 
 ```
 npm i
 ```
 
-_Configurando BBDD_
+_DataBase configuration_
 
-Deberás crear una tabla en tu servicio de MySql con el nombre _db_juguetes_. A continuación configura con tus propios datos de conexión a la BBDD el archivo _db.config.js_ dentro de la carpeta _config_ del Back-end.
+You should have to create (in your MySql sercie) a schema with the name _db_juguetes_. Later configure the connection with your own credentials in _db.config.js_ file, inside _config_ folder.
 
 ```
 module.exports = {
@@ -56,56 +58,59 @@ module.exports = {
 };
 ```
 
-* Asegúrate de colocar los credenciales de conexión a tu base de datos en los campos _USER_ y _PASSWORD_.
+* Be sure you put your _USER_ and _PASSWORD_.
 
 _Front-end_
 
-_Instalando dependencias_
+_Installing dependencies_
 
-Para configurar las bibliotecas y dependencias del Front, tan sólo ejecuta este comando dentro de la carpeta _frontend_ del proyecto:
+For install Front dependencies, just run this command inside the _frontend_ folder inside the project:
 
 ```
 npm i
 ```
 
 
-## Levantando el Back-End ⚙️
+## Setting up the back⚙️
 
-Una vez configurado el proyecto del _backend_, tan sólo deberás ejectur ``` node index.js ``` dentro de la raíz del proyecto.
 
-Verás que en la consola aparecerán una serie de notificaciones referidas a la base de datos y un aviso de que el servicio Back-End se ha levantado en el puerto 8080.
+Once the backend project is configured, you just have to run ``` node index.js ``` insede the backend root folder.
 
-Para realizar pruebas de los _endpoints_ que esta api-restfull ofrece puedes hacer uso del siguiente botón (enlace a workplace de [Postman](https://web.postman.co/))
+You'll see some notifications in the terminal about the database creation and advice that says the Back-end is up in the 8080 port.
+
+To realize some test from the _endpoints_ of this api-restfull, you can use the following button(link to postman [workplace](https://web.postman.co/))
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://god.gw.postman.com/run-collection/14032196-2e44493c-c0a7-44ec-962c-b364f8b176f7?action=collection%2Ffork&collection-url=entityId%3D14032196-2e44493c-c0a7-44ec-962c-b364f8b176f7%26entityType%3Dcollection%26workspaceId%3D80aad27e-dcf1-45ea-b953-b71747bc7a26)
 
 
 
 
-## Levantando el Front-End ⚙️
+## Setting up the Front-End ⚙️
 
-Para ejecutar el servicio de _Ionic_ del front tan sólo tendrás que ejecutar el siguiente comando desde la carpeta _frontend_:
+For run the _Ionic_ service you just have to run the following command from the _frontend_ folder:
 
 
 ```
 ionic serve
 ```
 
-Una vez ejecutados los dos servicios (_Back-end_ y _Front-end_) la aplicación estará completamente funcional y se podrá probar la creación, modificación, eliminación y listado de juguetes para mascotas ¡buen provecho! 	:bowtie:
+
+Once both services are up (_Back-end_ and _Front-end_), the application should be working with no problem and you could try the Creation, Read, Update and Delete from the pet toys application.
 
 
 
-## Construido con 🛠️
+
+## Created with 🛠️
 
 
 
-* [WebStorm](https://www.jetbrains.com/es-es/webstorm/) - IDE para javascript de JetBrains
-* [GitHub Cli](https://cli.github.com/) - Manejador de repositorios para consola de GitHub
-* [VSCode](https://code.visualstudio.com/) - Editor de texto Visual Studio Code
+* [WebStorm](https://www.jetbrains.com/es-es/webstorm/) - JavaScrip IDE from JetBrains
+* [GitHub Cli](https://cli.github.com/) - Terminal repositories manager.
+* [VSCode](https://code.visualstudio.com/) - Text editor Visual Studio Code
 
 
 
 
 
 ---
-⌨️ con ❤️ por [Néstor Lorenzo Artiles](https://github.com/wenesmek) :neckbeard:
+⌨️ with ❤️ by [Néstor Lorenzo Artiles](https://github.com/wenesmek) :neckbeard:
