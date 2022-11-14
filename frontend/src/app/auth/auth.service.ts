@@ -13,7 +13,7 @@ export class AuthService {
 
 
 
-  endpoint  =  'http://192.168.1.94:8080/api/users/';
+  endpoint  =  'http://localhost:8080/api/users/';
 
   constructor(private  httpClient:  HttpClient, private  storage:  Storage) { }
 
