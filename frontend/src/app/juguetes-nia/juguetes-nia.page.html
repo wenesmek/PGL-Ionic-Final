@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Listado de juguetes</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" text="Volver"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item button *ngFor="let j of juguetes" (click)="showMenu(j.id)">
+
+      <ion-card>
+        <ion-label>
+          <ion-card-header>
+            <ion-card-title>{{j.nombre}}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-avatar>
+              <img *ngIf="j.filename" src="http://localhost:8080/images/{{j.filename}}" alt="image"/>
+            </ion-avatar>
+            <ion-label>{{j.descripcion}}</ion-label>
+          </ion-card-content>
+        </ion-label>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="showMenu('0')">
+      <ion-icon name="add-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-list>
+    <ion-label>
+      <ion-select-option value="ver">Ver</ion-select-option>
+      <ion-select-option value="modificar">Modificar</ion-select-option>
+      <ion-select-option value="eliminar">Eliminar</ion-select-option>
+    </ion-label>
+  </ion-list>
+
+</ion-content>
