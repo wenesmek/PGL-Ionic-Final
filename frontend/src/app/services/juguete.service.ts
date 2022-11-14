@@ -9,7 +9,7 @@ import { Storage } from '@ionic/storage';
 })
 export class JugueteService {
 
-  endpoint = 'http://192.168.1.94:8080/api/juguetes';
+  endpoint = 'http://localhost:8080/api/juguetes';
 
   constructor(private httpClient: HttpClient, private storage: Storage) { }
 
